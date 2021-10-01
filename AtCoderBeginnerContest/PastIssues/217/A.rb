@@ -1,7 +1,9 @@
 #Lexicographic Order
-def main
-    str1, str2 = gets.chomp.split(" ")
-    print (str1 < str2 ? "YES" : "NO")
+def main(text)
+    str1, str2 = text.chomp.split(" ")
+    print (str1 < str2 ? "Yes" : "No")
 end
-
-main
+if __FILE__ == $0
+    main(gets)
+    exit
+end
